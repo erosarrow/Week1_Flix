@@ -50,6 +50,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="0.5645906690140845" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="overviewLabel" destination="N3y-tb-5bx" id="boL-9q-s8J"/>
