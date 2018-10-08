@@ -26,8 +26,8 @@ The following **stretch** user stories are implemented:
 The following **additional** user stories are implemented:
 
 - [x] List anything else that you can get done to improve the app functionality! (+1-3pts)
- Well this may seem trivial but I changed the color of the background because the default (white) is very bland and frankly a strain to the eye. I'm sure a different and friendly color will make the user come back to the app again and again.
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
+ - Well this may seem trivial but I changed the color of the background because the default (white) is very bland and frankly a strain to the eye. I'm sure a different and friendly color will make the user come back to the app again and again.
+- Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1.
 2.
