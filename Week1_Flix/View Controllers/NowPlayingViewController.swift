@@ -48,6 +48,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
             else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 let movies = dataDictionary["results"] as! [[String: Any]]
+                self.title = "Movies"
                 self.movies = movies
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
@@ -75,16 +76,27 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         let posterURL = URL(string: baseURLString +  posterPathString)!
         cell.posterImageView.af_setImage(withURL: posterURL)
-
+        
         
         return cell
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
     }
     
-
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    
+    
 }

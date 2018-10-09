@@ -6,7 +6,7 @@ target 'Week1_Flix' do
   use_frameworks!
 
   # Pods for Week1_Flix
-	pod 'AlamofireImage'
+	pod 'AlamofireImage
   target 'Week1_FlixTests' do
     inherit! :search_paths
     # Pods for testing
